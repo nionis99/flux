@@ -1,14 +1,14 @@
 const EPCR_HOST = process.env.REACT_APP_TARGET === 'development'
-    ? 'http://dev.epcr.z1.lt'
-    : 'https://epcr.033.lt';
+    ? 'http://dev.X.lt'
+    : 'https://X.lt';
 
 const FLUX_HOST = process.env.REACT_APP_TARGET === 'development'
-    ? 'http://flux_api.z1.lt'
-    : 'https://flux.033.lt';
+    ? 'http://X.lt'
+    : 'https://X.lt';
 
 class Constants {
-    public static readonly FOOTER_VERSION = `© OpenG™ • v${process.env.REACT_APP_VERSION}`;
-    public static readonly EPCR_HOME_URL = `${EPCR_HOST}/list/active-pcrs`;
+    public static readonly FOOTER_VERSION = `© X™ • v${process.env.REACT_APP_VERSION}`;
+    public static readonly EPCR_HOME_URL = `${OTHER_APP}/list/active-pcrs`;
     public static readonly APP_PAGES = {
         AUTHORIZATION: '/',
         UNAUTHORIZED: '/unauthorized',
