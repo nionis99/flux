@@ -1,0 +1,7 @@
+mirage
+public
+node_modules
+.idea
+package-lock.json
+coverage
+build

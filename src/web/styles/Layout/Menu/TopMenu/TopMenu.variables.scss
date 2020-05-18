@@ -1,0 +1,11 @@
+$green: green;
+$topNavigationSummaryItemBgColor: $green;
+$topNavigationHeight: 40px;
+$topAndPcrNavigationHeight: $topNavigationHeight + 60px;
+$trainingModeNavigationHeight: $topNavigationHeight + 79px;
+$topNavigationColor: #004062;
+$topNavigationSeparatorColor: darken($topNavigationColor, 2%);
+$topNavigationTextColor: white;
+$topNavigationFontSizeSmall: 12px;
+$topNavigationFontSize: 18px;
+$topNavigationZIndex: 1100;

@@ -1,0 +1,73 @@
+.input-inline {
+  display: flex !important;
+  justify-content: flex-end;
+  min-height: 2.9rem;
+  border-bottom: 2px solid lightgrey;
+
+  &:hover {
+    border-bottom: 2px solid #2ECC71 !important;
+  }
+
+  &:focus-within {
+    border-bottom-color: #0082c8;
+    background-color: #e0ecf7;
+    outline: 0;
+
+    .input-header, .input, .icon {
+      color: #0082c8;
+    }
+
+    input {
+      font-size: 1.2rem;
+      background-color: #e0ecf7;
+    }
+  }
+
+  &.locked:hover {
+    border-bottom: 2px solid darken(lightGrey, 10%);
+    cursor: default;
+  }
+
+  .grey {
+    color: grey;
+  }
+
+  i.icon {
+    color: #0082c8;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 0 0 .3rem 0;
+  }
+
+  .input {
+    color: black !important;
+    font-weight: 500;
+    padding-right: 20px;
+    min-height: 1.4rem;
+    position: relative;
+
+    &.editable {
+      padding-bottom: 0;
+      outline: none;
+      display: block;
+      width: 100%;
+      border: 0;
+      font-family: inherit;
+    }
+
+    &:focus {
+      font-size: 1rem;
+    }
+  }
+
+  label {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    color: grey;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  span {
+    align-self: flex-end;
+  }
+}

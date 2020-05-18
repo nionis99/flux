@@ -1,0 +1,40 @@
+.section-header {
+  margin-bottom: .625em;
+  padding: .5rem 0;
+  font-weight: 500;
+  border-top: solid #CCD1D1;
+  border-bottom: solid #CCD1D1;
+  background-color: #F2F4F4;
+  border-width: .063em;
+
+  .ui.container {
+    padding: 0;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 1.4285em;
+    }
+
+    .ui.button, .checkbox-true-null, .align-right {
+      white-space: nowrap;
+
+      &:first-of-type {
+        margin-left: auto;
+      }
+    }
+
+    i.clickable {
+      margin: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

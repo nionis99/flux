@@ -1,0 +1,67 @@
+.navigation {
+  width: 100%;
+  z-index: 1099;
+  margin-top: 0;
+  background-color: #0082c8;
+  color: white;
+
+
+  .ui.labeled.menu.icon {
+
+    a.item {
+      color: white;
+    }
+
+    a.active {
+
+      .item {
+        background-color: #0093e2;
+        color: white;
+      }
+
+      ::after {
+        color: white !important;
+        content: "";
+        border-bottom: .2rem solid orange;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .item {
+    min-width: 4.09rem !important;
+
+    @media only screen and (max-width: 800px) {
+      min-width: 4.05rem !important;
+      padding-left: .2rem !important;
+      padding-right: .2rem !important;
+    }
+  }
+
+  .ui.menu {
+    border: none;
+    margin-bottom: 0;
+    background-color: #0082c8;
+    font-size: 0.63rem;
+  }
+
+  div {
+    position: relative;
+  }
+
+  .ui.right.corner {
+    font-size: 6px;
+
+    .label {
+      font-size: 12px;
+      padding-top: .1rem;
+    }
+  }
+}
+
+html.touch-device .navigation .item {
+  color: black !important;
+}

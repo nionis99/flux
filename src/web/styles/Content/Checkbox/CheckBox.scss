@@ -1,0 +1,53 @@
+.ui.buttons {
+  text-align: left;
+  background-color: white;
+  width: 100%;
+
+  .ui.button {
+    padding: .6rem;
+    color: black !important;
+
+    &.active {
+      background-color: #0082c8 !important;
+      color: #FFF !important;
+    }
+  }
+}
+
+.ui.checkbox-button {
+  cursor: pointer;
+  padding: .15rem .5rem;
+  width: 100%;
+  background-color: #FFF;
+  border-radius: .16666667em;
+  border: 1px solid #cfd0d2;
+  height: 2.3rem;
+
+  &.checked {
+    &:hover label, label {
+      color: white;
+
+      &:after {
+        color: #0082c8 !important;
+      }
+    }
+
+    border: 1px solid #0082c8;
+    background: #0082c8;
+  }
+
+  .ui.checkbox {
+    position: relative;
+    backface-visibility: hidden;
+    outline: 0;
+    vertical-align: baseline;
+    font-style: normal;
+    min-height: 17px;
+    font-size: 1rem;
+    line-height: 17px;
+    min-width: 17px;
+  }
+}
+
+
+
